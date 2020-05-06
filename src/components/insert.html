@@ -1,0 +1,99 @@
+
+<!DOCTYPE html> 
+<html> 
+<style> 
+    /*set border to the form*/ 
+      
+    form { 
+        border: 3px solid #f1f1f1; 
+    } 
+    /*assign full width inputs*/ 
+      
+    input[type=text], 
+    input[type=number], 
+    input[type=submit]
+    { 
+        width: 100%; 
+        padding: 12px 20px; 
+        margin: 8px 0; 
+        display: inline-block; 
+        border: 1px solid #ccc; 
+        box-sizing: border-box; 
+    } 
+    /*set a style for the buttons*/ 
+      
+    .submit { 
+        
+        
+        padding: 14px 20px; 
+        margin: 8px 0; 
+        border: none; 
+        cursor: pointer; 
+        width: 100%; 
+    } 
+    /* set a hover effect for the button*/ 
+      
+    button:hover { 
+        opacity: 10; 
+    } 
+    /*set extra style for the cancel button*/ 
+      
+    
+
+    .imgcontainer { 
+        text-align: center; 
+        margin: 24px 0 12px 0; 
+        padding-bottom: 0%;
+    } 
+    /*set image properties*/ 
+      
+    img.avatar { 
+        width: 10%; 
+        border-radius: 50%; 
+        padding-bottom: 0%;
+    } 
+    /*set padding to the container*/ 
+      
+    .container { 
+        padding: 150px; 
+        padding-top: 0%;
+    } 
+    /*set the forgot password text*/ 
+      
+    
+    } 
+</style> 
+<body> 
+
+	
+	
+	<form action="/sign_up" method="post"> 
+		<div class="imgcontainer"> 
+            <h2 style= "font-family: 'Courier New', Courier, monospace;"    >Insert products form </h2> 
+			<img src= 
+            "https://media.glassdoor.com/sqll/531564/crossword-squarelogo-1451290131730.png"
+				alt="Avatar" class="avatar"> 
+		</div> 
+
+		<div class="container"> 
+			<label><b>Book Name</b></label> 
+			<input type="text" placeholder="Enter Book Name"  id ="name" name="name" required> 
+
+			<label><b> Author Name</b></label> 
+            <input type="text" placeholder="Enter Author's Name" id ="author" name="author" required>
+
+            <label><b> Count</b></label> 
+			<input type="number" placeholder=" Enter the Price" id ="count" name="count" required> 
+
+            <label><b> Description</b></label> 
+            <input type="text" placeholder="Desciption of the book" id ="desc" name="desc" required>
+
+            <input    type="submit" id="submitDetails"  
+            name="submitDetails" value="Submit" /><br> 
+			
+		</div> 
+	</form> 
+
+</body> 
+
+</html> 
